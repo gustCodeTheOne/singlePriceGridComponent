@@ -1,0 +1,153 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+}
+@font-face {
+  font-family: "Karla";
+  src: url("./fonts/Karla-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: "Karla ExtraLight";
+  src: url("./fonts/static/Karla-ExtraLight.ttf");
+}
+body {
+  background-color: hsl(204, 43%, 93%);
+  font-family: "Karla";
+  font-size: 16px;
+  font-weight: 400;
+}
+.content {
+  max-width: 1440px;
+  margin: 0px auto;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 606px;
+  margin: 0px auto;
+  background-color: #fff;
+  border-radius: 10px 10px;
+  overflow: hidden;
+  margin-top: 152px;
+  margin-bottom: 152px;
+  box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
+}
+.info {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.priceContainer,
+.whyUsContainer {
+  width: 50%;
+  color: #fff;
+}
+.priceContainer {
+  background-color: hsl(179, 62%, 43%);
+}
+.whyUsContainer {
+  background-color: hsla(179, 62%, 43%, 0.8);
+}
+.title,
+.mark,
+.desc {
+  margin-left: 38px;
+  margin-right: 68px;
+}
+.title {
+  margin-top: 42px;
+  margin-bottom: 23px;
+  color: hsl(179, 62%, 43%);
+}
+.mark {
+  color: hsl(71, 73%, 54%);
+  margin-bottom: 12px;
+  letter-spacing: 1px;
+}
+.desc {
+  color: hsl(218, 22%, 67%);
+  font-size: 15px;
+  line-height: 24px;
+  margin-bottom: 37px;
+}
+.value {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.subTitle,
+.value,
+.priceInfo,
+.whyUsInfo,
+button {
+  margin-left: 38px;
+  margin-right: 38px;
+}
+.subTitle {
+  font-size: 17px;
+  font-weight: 400;
+  margin-top: 39px;
+  margin-bottom: 20px;
+}
+.priceUnit {
+  font-family: "Karla ExtraLight";
+  line-height: 28px;
+  margin-left: 12px;
+  opacity: 0.6;
+}
+.price {
+  font-size: 28px;
+  font-weight: 700;
+}
+.priceInfo {
+  font-size: 15px;
+  margin-top: 8px;
+  margin-bottom: 25px;
+}
+button {
+  width: 75%;
+  height: 45px;
+  margin-bottom: 36px;
+  font-family: "Karla";
+  font-size: 15px;
+  font-weight: 600;
+  color: #fff;
+  background-color: hsl(71, 73%, 54%);
+  border: none;
+  border-radius: 5px 5px;
+  box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: all 300ms;
+}
+button:hover {
+  background-color: hsl(71, 64%, 34%);
+}
+.whyUsInfo {
+  font-family: "Karla ExtraLight";
+  font-size: 14px;
+  margin-right: 78px;
+  list-style-type: none;
+  line-height: 18px;
+}
+@media (max-width: 635px) {
+  .container {
+    width: 95%;
+  }
+  .info {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .priceContainer,
+  .whyUsContainer {
+    width: 100%;
+  }
+  .whyUsInfo {
+    margin-bottom: 36px;
+  }
+}
